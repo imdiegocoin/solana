@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Diego coin">
+    <meta name="author" content="Diego">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Incluir Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>I'M DIEGO</h1>
+        <!-- Menú desplegable -->
+        <nav class="dropdown-menu">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="how-to-buy.html">How to Buy it</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="content-container">
+            <div class="image-content">
+                <img src="logo.png" alt="Mi logo">
+            </div>
+        </section>
+    
+            <section>
+            <!-- Contador de tiempo -->
+            <div id="countdown" class="countdown-timer">
+                <h2>Presale Countdown</h2>
+                <div class="timer">
+                    <div>
+                        <span id="days">00</span>
+                        <div class="label">Days</div>
+                    </div>
+                    <div>
+                        <span id="hours">00</span>
+                        <div class="label">Hours</div>
+                    </div>
+                    <div>
+                        <span id="minutes">00</span>
+                        <div class="label">Mins</div>
+                    </div>
+                    <div>
+                        <span id="seconds">00</span>
+                        <div class="label">Secs</div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>  
+    </main>
+
+    <footer>
+        <p>© 2024 - All rights reserved.</p>
+        <p><a href="https://x.com/ImDiegoCoin" target="_blank" rel="noopener noreferrer"><i class="fab fa-x"></i> Follow on X</a></p>
+        <p><a href="https://t.me/diegoholders" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i> Follow on Telegram</a></p>
+    </footer>
+
+    <!-- Incluir el script del contador -->
+    <script src="countdown.js"></script>
+</body>
+</html>

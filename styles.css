@@ -1,0 +1,292 @@
+/* Reset básico */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #87CEFA; /* Azul cielo */
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Estilo del encabezado */
+header {
+    background: linear-gradient(135deg, #0078d7, #00f2fe); /* Gradiente diagonal de azul */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 2rem; /* Más espacio alrededor */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-bottom: 4px solid #00f2fe; /* Borde inferior de color brillante */
+    font-family: 'Arial', sans-serif; /* Fuente más limpia */
+}
+
+/* Título del encabezado */
+header h1 {
+    font-size: 2.5rem; /* Tamaño más grande para destacar */
+    font-weight: bold;
+    letter-spacing: 1.5px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Título en mayúsculas */
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Sombra suave al texto */
+}
+
+/* Menú desplegable */
+.dropdown-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+}
+
+
+/* Botón del menú */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: 2px solid #fff; /* Borde blanco */
+    border-radius: 30px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.dropbtn:hover {
+    background-color: #00f2fe; /* Fondo de color brillante al pasar el ratón */
+    color: #333; /* Texto oscuro al hacer hover */
+    transform: scale(1.05); /* Efecto de escala suave */
+}
+
+/* Menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #0078d7;
+    min-width: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Enlaces del menú desplegable */
+.dropdown-content a {
+    color: white;
+    font-weight: bold;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #00f2fe;
+    color: #333;
+}
+
+/* Mostrar el menú al pasar el ratón */
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Botón del menú (tres líneas) */
+.dropbtn {
+    background-color: #0056a5; /* Azul oscuro */
+    color: white;
+    padding: 20px 25px; /* Aumenta el tamaño del botón */
+    font-size: 20px; /* Letra más grande */
+    border: none;
+    cursor: pointer;
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #004080; /* Azul más oscuro al pasar el ratón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de las líneas del menú */
+.menu-icon div {
+    width: 40px; /* Aumenta el ancho de las líneas */
+    height: 6px; /* Aumenta el grosor de las líneas */
+    background-color: #0078d7; /* Azul */
+    margin: 6px 0; /* Espaciado entre líneas */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Mostrar el menú desplegable al pasar el ratón */
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+/* Contenedor del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #0078d7; /* Azul del header */
+    min-width: 180px; /* Menú más ancho */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Enlaces del menú desplegable */
+.dropdown-content a {
+    color: white;
+    font-weight: bold;
+    padding: 15px 20px; /* Tamaño más grande */
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #0056a5; /* Azul más oscuro */
+    color: #f9f9f9; /* Letra clara al pasar el ratón */
+}
+
+/* Mostrar menú al pasar el mouse */
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+/* Secciones */
+main {
+    padding: 2rem;
+}
+
+/* Recuadros con texto futurista */
+section {
+    background: linear-gradient(135deg, #3a7bd5, #00f2fe ); /* Gradiente de colores brillantes */
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* Sombra tipo neón */
+    border: 2px solid #00f2fe; /* Borde del recuadro con color neón */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Efecto al pasar el ratón sobre el recuadro */
+section:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5); /* Sombra más intensa al pasar el ratón */
+}
+
+/* Título dentro del recuadro */
+section h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00f2fe, 0 0 20px #00f2fe, 0 0 30px #00f2fe; /* Efecto de texto neón */
+    margin-bottom: 15px;
+}
+
+/* Estilo del texto dentro del recuadro */
+section p {
+    color: #f0f0f0; /* Texto claro */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-shadow: 0 0 5px #00f2fe; /* Sutil sombra de texto */
+}
+
+/* Enlace dentro del recuadro */
+section a {
+    color: #d1561d;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+section a:hover {
+    color: #020202; /* Color azul oscuro al pasar el ratón */
+    text-shadow: 0 0 10px #3a7bd5; /* Sombra de texto azul */
+}
+
+
+
+/* Estilo del pie de página */
+footer {
+    background-color: #0078d7;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina subrayado */
+    font-weight: bold; /* Negrita */
+    margin-left: 10px; /* Espacio entre el icono y el texto */
+}
+
+footer a:hover {
+    color: #1da1f2; /* Cambia el color al azul de Twitter al pasar el mouse */
+}
+
+footer i {
+    font-size: 1.2rem; /* Tamaño del ícono */
+}
+
+/* Estilo del logo */
+img {
+    width: 35%; /* Ajusta al ancho del contenedor */
+    height: 35%; /* Mantiene las proporciones */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */  
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+/* Estilo general para el contenedor de cada paso */
+.step-container {
+    display: flex; /* Flexbox para alinear la imagen y el texto en una fila */
+    justify-content: flex-start; /* Alinea los elementos desde el inicio */
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin: 0; /* Elimina márgenes en el contenedor */
+    padding: 0; /* Elimina relleno en el contenedor */
+}
+
+/* Estilo de la imagen dentro del contenedor */
+.step-image img {
+    width: 40%; /* Define un ancho del 40% para la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 0; /* Elimina márgenes alrededor de la imagen */
+    padding: 0; /* Elimina cualquier relleno alrededor de la imagen */
+    display: block; /* Elimina cualquier espacio extra debajo de la imagen */
+}
+
+/* Estilo del texto dentro del contenedor */
+.step-text {
+    width: 55%; /* El texto ocupa el 55% del contenedor */
+    font-size: 1.2rem; /* Tamaño de fuente adecuado */
+    color: #555; /* Color gris para el texto */
+    margin: 0; /* Elimina márgenes alrededor del texto */
+    padding: 0; /* Elimina cualquier relleno alrededor del texto */
+    line-height: 1.5; /* Espaciado entre las líneas del texto */
+}
+
+/* Efecto al pasar el ratón sobre la imagen */
+.step-image img:hover {
+    transform: scale(3.5); /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+}
+
