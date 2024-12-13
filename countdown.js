@@ -1,5 +1,5 @@
 // Fecha objetivo (20 de diciembre del año actual)
-const targetDate = new Date('December 20, 2024 00:00:00').getTime();
+const targetDate = new Date('December 20, 2024 20:00:00').getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
